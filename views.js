@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Dimensions} from "react-native";
-import {MapView} from 'expo';
+import MapView from 'react-native-maps';
 const {width, height} = Dimensions.get("window");
 
 export const Main = styled.View`
@@ -56,4 +56,22 @@ export const ButtonTitle = styled.Text`
 export const Map = styled(MapView)`
   width: 100%;
   height: ${height - 80};
+`;
+
+export const PlaceIcon = styled.Image`
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  position:absolute;
+  left: ${(width / 2) - 10};
+  top: ${(height / 2) + 25};
+`;
+export const PassangerIcon = styled.Image`
+  width: 30px;
+  height: 30px;
+`;
+
+export const TaxiIcon = styled.Image`
+  width: 30px;
+  height: 30px;
 `;
