@@ -1,0 +1,9 @@
+node_modules/**/*
+.expo/*
+.idea/
+package-lock.json
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
